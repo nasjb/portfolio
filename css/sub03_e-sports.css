@@ -54,6 +54,7 @@
   letter-spacing: 5px;
   color: #fff;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 /* 정렬기준 상단바 */

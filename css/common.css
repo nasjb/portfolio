@@ -585,8 +585,8 @@ li {
 @media screen and (max-width: 767px) {
     /* 헤더 */
     .header .inner {
-        width: 100%;
-        margin: 0 40px;
+        width: 90%;
+        margin: 0 auto;
     }
     .header.active {
         height: 100vh;
@@ -635,7 +635,7 @@ li {
         color: #fff;
     }
     .menu_icon {
-        right: 80px;
+        /*right: 80px;*/
     }
     .pop_search {
         left: 0;
