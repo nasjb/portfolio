@@ -1,0 +1,227 @@
+/* 배너 */
+
+.banner01 {
+  background-color: #050437;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.banner01 h1 {
+  padding-top: 150px;
+}
+
+.search_bar {
+  width: 40%;
+  margin: 0 auto;
+}
+.search_bar .searchbox {
+  text-align: center;
+  padding: 20px 0px 80px 0px;
+  position: relative;
+}
+
+.search_bar .searchbox input {
+  border-radius: 30px;
+  border: 2px solid #5d5fef;
+  background-color: #050437;
+  width: 100%;
+  padding: 10px 100px;
+  height: 50px;
+  color: #ff88ff;
+}
+.search_bar .searchbox ::placeholder {
+  color: #ff88ff;
+}
+.search_bar .searchbox img {
+  position: absolute;
+  width: 30px;
+  bottom: 90px;
+  right: 40px;
+}
+
+/* 범주별 찾기 */
+#category > h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.category_wrap {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.categorybox p {
+  margin-top: 10px;
+}
+.categorybox {
+  background-color: #050437;
+  border: 2px solid #111049;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 16%;
+  height: 120px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+}
+
+.categorybox.active {
+  border: 2px solid #ff88ff;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 135, 255, 0.1) 5%,
+    rgba(255, 135, 255, 0.3) 50%,
+    rgba(79, 75, 255, 1) 90%
+  );
+  box-sizing: border-box;
+  transition: 2s;
+  color: #050437;
+  font-weight: 600;
+}
+
+.tab-box.active {
+  display: block;
+}
+
+.tab-box {
+  display: none;
+  margin-bottom: 80px;
+}
+
+.itembox {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-self: center;
+}
+
+/* 하위질문 */
+
+.account_question {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+
+.questionbox:hover {
+  border: 2px solid #ff88ff;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 135, 255, 0.1) 5%,
+    rgba(255, 135, 255, 0.3) 50%,
+    rgba(79, 75, 255, 1) 90%
+  );
+  box-sizing: border-box;
+  color: #fff;
+  transition: 1s;
+}
+.questionbox {
+  background-color: #050437;
+  border: 2px solid #111049;
+  box-sizing: border-box;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  width: 25%;
+  height: 180px;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.questionbox .txtbox {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-self: center;
+}
+.questionbox .txtbox .fs_20 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.questionbox .txtbox .fs_14:hover {
+  color: #050437;
+  font-weight: 600;
+}
+.questionbox .txtbox .fs_14 {
+  line-height: 24px;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 767px) {
+  .search_bar {
+    width: 90%;
+  }
+
+  .search_bar .searchbox input {
+    padding: 10px 20px;
+  }
+
+  .category_wrap {
+    flex-direction: column;
+  }
+  .categorybox p {
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .categorybox {
+    border: 1px solid #111049;
+    border-radius: 10px;
+    width: 90%;
+    height: 100px;
+    margin: 5px;
+    padding: 15px 0 10px 0;
+  }
+
+  .categorybox.active {
+    border: 1px solid #ff88ff;
+  }
+
+  /* 하위질문 */
+
+  .account_question {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+
+  .questionbox:hover {
+    border: 1px solid #ff88ff;
+  }
+  .questionbox {
+    border: 1px solid #111049;
+    width: 100%;
+    padding: 0px;
+    margin: 10px 0;
+  }
+
+  .questionbox .txtbox .fs_20 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .questionbox .txtbox .fs_14:hover {
+    color: #050437;
+    font-weight: 600;
+  }
+  .questionbox .txtbox .fs_14 {
+    line-height: 24px;
+    transition: 0.5s;
+  }
+}

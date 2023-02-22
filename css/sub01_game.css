@@ -1,0 +1,490 @@
+/* 배너 */
+
+.banner01 {
+    background-image: url(../image/image_sub01/sub_bn_02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner01 h1 {
+    padding: 160px 0 120px 0;
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.fs_50 {
+    padding: 120px 0;
+}
+
+.store_wrap {
+    width: 1450px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+/* 서치바 */
+
+.sub_game_search {
+    width: 260px;
+    height: 200px;
+    background-color: #050437;
+    border: 1px solid #5d5fef;
+    border-radius: 30px;
+    margin: 0 20px 20px 0;
+}
+
+.sub_game_search .searchbox {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.sub_game_search .searchbox input {
+    border-radius: 10px;
+    border: 2px solid #5d5fef;
+    background-color: #050437;
+    width: 200px;
+    padding: 10px 40px;
+    height: 34px;
+    color: #ff88ff;
+}
+
+.sub_game_search .searchbox img {
+    width: 22px;
+    position: absolute;
+    bottom: 25px;
+    right: 40px;
+}
+
+.sub_game_search .text_box {
+    text-align: center;
+}
+
+.sub_game_search .text_box p {
+    margin-bottom: 20px;
+}
+
+.sub_game_search .text_box strong {
+    color: #ff88ff;
+    cursor: pointer;
+}
+
+.sub01_game .search_tag {
+    display: flex;
+    justify-content: center;
+}
+
+.sub01_game .align .search_tag .tag_button {
+    background-color: #050437;
+    margin-bottom: 0;
+    line-height: 35px;
+    height: 35px;
+    padding: 0 15px;
+}
+
+.sub01_game .search_tag .tag_button {
+    background-color: #111049;
+    border-radius: 20px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 15px;
+    margin: 0px 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #ff88ff;
+}
+
+.sub01_game .search_tag .fa-times {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+
+/* 카테고리바 */
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 200px;
+    height: 2px;
+    cursor: pointer;
+    background: #c2c2ff;
+    border-radius: 10px;
+}
+
+.category_bar {
+    width: 260px;
+    height: 760px;
+    background-color: #050437;
+    border: 1px solid #5d5fef;
+    border-radius: 30px;
+    margin: 0 20px 0 0px;
+    text-align: center;
+}
+
+.category_bar ul {
+    padding: 30px 0;
+    font-size: 16px;
+    position: relative;
+}
+
+.category_bar ul li {
+    padding: 10px 30px;
+}
+
+.category_bar span {
+    color: #ff88ff;
+}
+
+.category_bar ul li:nth-child(3) a {
+    font-size: 30px;
+    color: #fff;
+}
+
+.category_bar .genre ul {
+    font-size: 20px;
+    height: 250px;
+    overflow: auto;
+    background-color: #111049;
+    border: 1px solid #5d5fef;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.category_bar .genre ul::-webkit-scrollbar {
+    display: none;
+}
+
+.category_bar ul li a {
+    color: #c2c2ff;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.category_bar .genre ul li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* 정렬기준 */
+
+.filter {
+    display: none;
+    width: 60px;
+    height: 24px;
+    border-radius: 10px;
+    background-color: #050437;
+    margin: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #ff88ff;
+}
+
+.filter .fa {
+    font-size: 12px;
+    color: #ff88ff;
+    margin-left: 5px;
+}
+
+.align,
+.align_tag,
+.tag_button {
+    display: flex;
+    align-items: center;
+}
+
+.align .criterion ul {
+    display: flex;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.align .criterion ul li {
+    padding: 5px 10px;
+    position: relative;
+}
+
+.align .criterion ul li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #c2c2ff;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+.align .criterion ul li:nth-child(2):after,
+.align .criterion ul li:nth-child(4):after {
+    display: none;
+}
+
+.align .criterion ul li span {
+    color: #ff88ff;
+}
+
+.align .align_tag .tag_button {
+    background-color: #050437;
+    border-radius: 30px;
+    padding: 0 10px;
+    margin-left: 20px;
+}
+
+.align .align_tag .tag_button a {
+    color: #ff88ff;
+    padding: 5px;
+}
+
+
+/* 게임박스 */
+
+.y_00::after,
+.y_12::after,
+.y_15::after,
+.y_18::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    border: 10px solid #050437;
+}
+
+.y_00::after {
+    background-color: #058f45;
+}
+
+.y_12::after {
+    background-color: #5d5fef;
+}
+
+.y_15::after {
+    background-color: #fcc106;
+}
+
+.y_18::after {
+    background-color: #ed1c24;
+}
+
+.game_box_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game_box_wrap img {
+    width: 240px;
+    border-radius: 20px;
+}
+
+.game_box:hover {
+    border: 3px solid #ff88ff;
+    transition: 00.5s;
+}
+
+.game_box {
+    border: 3px solid #111049;
+    border-radius: 30px;
+    background-color: #050437;
+    padding: 10px;
+    width: 240px;
+    height: 420px;
+    margin: 20px 10px;
+    position: relative;
+}
+
+.game_box .year {
+    color: #fff;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 3px;
+    right: 2px;
+    z-index: 2;
+}
+
+.game_box .year p {
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.price {
+    font-weight: 600;
+    align-items: flex-end;
+}
+
+.price h2 {
+    font-size: 28px;
+}
+
+.price h3 {
+    font-size: 22px;
+}
+
+.price h1 {
+    font-size: 34px;
+}
+
+.checkable,
+.discount,
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkable,
+.game_name,
+.discount,
+.price {
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.checkable {
+    font-size: 14px;
+}
+
+.checkable .consol {
+    color: #fff;
+    font-weight: bold;
+}
+
+.game_name h4 {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Orbitron", sans-serif;
+}
+
+.game_name h4:hover {
+    color: #ff88ff;
+    transition: 00.2s;
+}
+
+.discount h5 {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.discount .plus span {
+    color: yellow;
+}
+
+.discount .ea span {
+    color: red;
+}
+
+.price h3 {
+    font-weight: lighter;
+}
+
+.price h1 {
+    color: #ff88ff;
+}
+
+@media screen and (max-width: 767px) {
+    .option_bar,
+    .align,
+    .checkable,
+    .discount {
+        display: none;
+    }
+    .banner01 h1 {
+        font-size: 30px;
+    }
+    .fs_50 {
+        padding: 30px 0;
+    }
+    .game_box_wrap {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        margin: 0 auto;
+    }
+    .game_box_wrap img {
+        width: 140px;
+        border-radius: 10px;
+    }
+    .game_box {
+        border: 3px solid #111049;
+        border-radius: 20px;
+        background-color: #050437;
+        padding: 10px;
+        width: 145px;
+        height: 250px;
+        margin: 10px 5px;
+        position: relative;
+    }
+    .game_box .year {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 6px;
+        right: 6px;
+        z-index: 2;
+    }
+    .game_box .year p {
+        color: #fff;
+        font-size: 12px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .price h2 {
+        font-size: 14px;
+    }
+    .price h3 {
+        font-size: 14px;
+    }
+    .price h1 {
+        font-size: 20px;
+    }
+    .game_name h4 {
+        width: 120px;
+        height: 40px;
+        overflow: hidden;
+        font-size: 14px;
+    }
+    .y_00::after,
+    .y_12::after,
+    .y_15::after,
+    .y_18::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        border: 5px solid #050437;
+    }
+    .box_15,
+    .box_16 {
+        display: none;
+    }
+    .filter {
+        display: block;
+    }
+}

@@ -1,0 +1,102 @@
+body {
+    height: 100vh;
+    position: relative;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.login_wrap {
+    width: 300px;
+    height: 380px;
+    background-color: #050437;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.inner {
+    width: 260px;
+    margin: 0 auto;
+}
+
+.top a img {
+    width: 80px;
+    height: 80px;
+}
+
+#close .fa:hover {
+    cursor: pointer;
+    color: #ff88ff;
+}
+
+#close .fa {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: #a5a6f6;
+}
+
+.inputBox {
+    margin: 15px 0;
+}
+
+.inputBox input {
+    width: 70%;
+    padding: 15px;
+    background-color: #050437;
+    border-radius: 10px;
+    border: 1px solid #a5a6f6;
+    margin: 5px 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.inputBox .button {
+    width: 70%;
+    padding: 10px 15px;
+    background: linear-gradient( 130deg, rgba(17, 16, 73, 0.3) 5%, rgba(255, 136, 255, 0.5) 65%, rgba(80, 75, 255, 0.5) 90%);
+    border-radius: 10px;
+    border: 1px solid #5d5fef;
+    margin: 5px auto;
+    margin-top: 20px;
+    color: #fff;
+}
+
+::placeholder {
+    color: #ff88ff;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+}
+
+.login_wrap ul {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login_wrap ul li {
+    position: relative;
+    text-align: right;
+}
+
+.help {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.help img {
+    width: 12px;
+    height: 12px;
+    margin: 0 20px 0 5px;
+}

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/sub01_game.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <link rel="icon" type="image/x-icon" href="../image/image_main/main_logo.png" />
+
+    <title>sub01_game</title>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="../index.html">
+                    <img src="../image/image_main/A_단색채움png.png" alt="logo" />
+                </a>
+            </h1>
+            <nav class="gnb_wrap">
+                <ul class="global_nav_bar fs_14">
+                    <li>
+                        <a href="../html/sub01_game.html"><span>GAME</span></a>
+                    </li>
+                    <li><a href="../html/sub02_ps-plus.html">PLAYSTATION+</a></li>
+                    <li><a href="#">HARDWARE</a></li>
+                    <li><a href="../html/sub03_e-sports.html">E-SPORTS</a></li>
+                    <li><a href="../html/sub04_customer.html">고객센터</a></li>
+                    <li><a href="../html/sub05_notice-breaknews.html">공지사항</a></li>
+                </ul>
+                <ul class="local_nav_bar">
+                    <li>
+                        <ul class="sub-menu">
+                            <li>플레이스테이션 스토어</li>
+                            <li>PS5</li>
+                            <li>PS4</li>
+                            <li>PS VR</li>
+                            <li>PS PLUS</li>
+                            <li>프로모션</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="sub-menu">
+                            <li>정기구독</li>
+                            <li>기프트카드</li>
+                            <li>혜택</li>
+                            <li>PS5 엔터테인먼트</li>
+                            <li>PS4 엔터테인먼트</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="sub-menu">
+                            <li>PS5</li>
+                            <li>PS4</li>
+                            <li>PS4 프로</li>
+                            <li>PS4 VR</li>
+                            <li>무선 컨트롤러</li>
+                            <li>무선 헤드셋</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="sub-menu">
+                            <li>토너먼트</li>
+                            <li>playstation ARENA</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="sub-menu">
+                            <li>고객지원</li>
+                            <li>자주있는 질문</li>
+                            <li>제품 등록 / 보증</li>
+                            <li>나의 PSN 상태</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="sub-menu">
+                            <li>새로운 소식</li>
+                            <li>공지사항</li>
+                            <li>보도자료</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="mobile_gnb_wrap">
+                <ul class="mobile_global_nav_bar fs_14">
+                    <li>
+                        <div class="main-menu">
+                            <a href="../html/sub01_game.html">GAME</a>
+                            <i class="fa fa-sort-down"></i>
+                        </div>
+                        <div class="mobile_sub-menu active">
+                            <p>플레이스테이션 스토어</p>
+                            <p>PS5</p>
+                            <p>PS4</p>
+                            <p>PS VR</p>
+                            <p>PS PLUS</p>
+                            <p>프로모션</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-menu">
+                            <a href="../html/sub02_ps-plus.html">PLAYSTATION+</a>
+                            <i class="fa fa-sort-down"></i>
+                        </div>
+                        <div class="mobile_sub-menu">
+                            <p>정기구독</p>
+                            <p>기프트카드</p>
+                            <p>혜택</p>
+                            <p>PS5 엔터테인먼트</p>
+                            <p>PS4 엔터테인먼트</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-menu">
+                            <a href="#">HARDWARE</a>
+                            <i class="fa fa-sort-down"></i>
+                        </div>
+                        <div class="mobile_sub-menu">
+                            <p>PS5</p>
+                            <p>PS4</p>
+                            <p>PS4 프로</p>
+                            <p>PS4 VR</p>
+                            <p>무선 컨트롤러</p>
+                            <p>무선 헤드셋</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-menu">
+                            <a href="../html/sub03_e-sports.html">E-SPORTS</a>
+                            <i class="fa fa-sort-down"></i>
+                        </div>
+                        <div class="mobile_sub-menu">
+                            <p>토너먼트</p>
+                            <p>playstation ARENA</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-menu">
+                            <a href="../html/sub04_customer.html">고객센터</a>
+                            <i class="fa fa-sort-down"></i>
+                        </div>
+                        <div class="mobile_sub-menu">
+                            <p>고객지원</p>
+                            <p>자주있는 질문</p>
+                            <p>제품 등록 / 보증</p>
+                            <p>나의 PSN 상태</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-menu">
+                            <a href="../html/sub05_notice-breaknews.html">공지사항</a>
+                            <i class="fa fa-sort-down"></i>
+                        </div>
+                        <div class="mobile_sub-menu">
+                            <p>새로운 소식</p>
+                            <p>공지사항</p>
+                            <p>보도자료</p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="menu_icon">
+                <li>
+                    <i class="fa fa-search"></i>
+                </li>
+                <li>
+                    <a href="../html/login.html"><i class="fa fa-user-circle"></i></a>
+                </li>
+                <li>
+                    <!-- <i class="fa fa-align-justify"></i> -->
+                    <div class="align_justify">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 서치팝업 -->
+    <div class="pop_search">
+        <div class="close">
+            <i class="fa fa-times-circle"></i>
+        </div>
+        <div class="search_input">
+            <input type="search" placeholder="_search" />
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="underline"></div>
+        <div class="saerch_tag">
+            <div class="tag_button">
+                <span>#데스루프</span>
+            </div>
+            <div class="tag_button">
+                <span>#바이오하자드</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <main class="main">
+            <div class="sub01_game">
+                <!-- 배너 -->
+                <div class="banner01">
+                    <h1>이 달의 추천게임</h1>
+                </div>
+                <!-- 스토어 전체 -->
+                <div class="fs_50">
+                    <h1>PLAYSTATION STORE</h1>
+                </div>
+                <div class="store_wrap">
+                    <!-- 서치 / 카테고리 바 -->
+                    <div class="option_bar">
+                        <!-- 서치 바 -->
+                        <div class="sub_game_search">
+                            <div class="searchbox">
+                                <input type="search" />
+                                <img src="../image/icon/icon_search.png" alt="search" />
+                            </div>
+                            <div class="text_box">
+                                <p>16 / 57 개의 결과 표시중</p>
+                                <div class="search_tag">
+                                    <div class="tag_button">
+                                        <span>롤플레잉</span>
+                                        <span><i class="fa fa-times"></i></span>
+                                    </div>
+                                    <div class="tag_button">
+                                        <span>유니크</span>
+                                        <span><i class="fa fa-times"></i></span>
+                                    </div>
+                                </div>
+                                <strong>2개의 필터 모두 지우기</strong>
+                            </div>
+                        </div>
+                        <!-- 카테고리 바 -->
+                        <div class="category_bar">
+                            <ul>
+                                <li><a href="#">정렬</a></li>
+                                <li><a href="#">유형</a></li>
+                                <li>
+                                    <a href="#">장르</a>
+                                    <div class="genre">
+                                        <ul>
+                                            <li><a href="#">액션</a></li>
+                                            <li><a href="#">어드벤처</a></li>
+                                            <li><a href="#">슈팅</a></li>
+                                            <li>
+                                                <a href="#"><span>롤플레잉</span></a>
+                                            </li>
+                                            <li><a href="#">아케이드</a></li>
+                                            <li>
+                                                <a href="#"><span>유니크</span></a>
+                                            </li>
+                                            <li><a href="#">스포츠</a></li>
+                                            <li><a href="#">드라이빙/레이싱</a></li>
+                                            <li><a href="#">시뮬레이션</a></li>
+                                            <li><a href="#">퍼즐</a></li>
+                                            <li><a href="#">캐주얼</a></li>
+                                            <li><a href="#">격투</a></li>
+                                            <li><a href="#">공포</a></li>
+                                            <li><a href="#">전략</a></li>
+                                            <li><a href="#">음악/리듬</a></li>
+                                            <li><a href="#">파티</a></li>
+                                            <li><a href="#">두뇌개발</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">플랫폼</a></li>
+                                <li><a href="#">PlaystationVR</a></li>
+                                <li><a href="#">가격</a></li>
+                            </ul>
+                            <input class="range" type="range" min="0" max="100,000" value="10,000" />
+                        </div>
+                    </div>
+                    <!-- 정렬기준 / 게임박스 -->
+                    <div class="game_list">
+                        <!-- 정렬기준 -->
+                        <div class="filter">
+                            필터
+                            <i class="fa fa-filter"></i>
+                        </div>
+                        <div class="align">
+                            <div class="criterion">
+                                <ul>
+                                    <li>
+                                        <span>최신 순</span>
+                                    </li>
+                                    <li>오래된 순</li>
+                                    <li>
+                                        <span>가격 높은 순</span>
+                                    </li>
+                                    <li>가격 낮은 순</li>
+                                </ul>
+                            </div>
+                            <div class="search_tag">
+                                <div class="tag_button">
+                                    <span>롤플레잉</span>
+                                    <span><i class="fa fa-times"></i></span>
+                                </div>
+                                <div class="tag_button">
+                                    <span>유니크</span>
+                                    <span><i class="fa fa-times"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 게임박스 -->
+                        <div class="game_box_wrap">
+                            <div class="game_box y_15">
+                                <div class="year">
+                                    <p>15</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_01.jpg" alt="01" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character">PRE-ORDER</div>
+                                    <div class="consol">PS5</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        SpellForce III Reforced : <br /> Complete Edition (게임)
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <!-- <h5 class="ordinary" >
+                  -15%
+                </h5> -->
+                                    <h5 class="plus"><span>+</span>20% 할인</h5>
+                                    <!-- <h5 class="ea" >
+                  <span>EA</span>포함
+                </h5> -->
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del>64,800</del></h3>
+                                    <h1>51,840</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_15">
+                                <div class="year">
+                                    <p>15</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_02.jpg" alt="02" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character">게임번들</div>
+                                    <div class="consol">PS5 / PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        마블의 가디언즈 오브 갤럭시<br /> (Chinese/Korean)
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <h5 class="ordinary">-15%</h5>
+                                    <h5 class="plus"><span>+</span>포함</h5>
+                                    <h5 class="ea"><span>EA</span>포함</h5>
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del>69,800</del></h3>
+                                    <h1>59,330</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_18">
+                                <div class="year">
+                                    <p>18</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_03.jpg" alt="03" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character"></div>
+                                    <div class="consol">PS5 / PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        Biohazard Village <br /> PS4 & PS5 (한국어, 태...
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <h5 class="ordinary">-50%</h5>
+                                    <!-- <h5 class="plus" >
+                  <span>+</span>포함
+                </h5>
+                <h5 class="ea" >
+                  <span>EA</span>포함
+                </h5> -->
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del>66,800</del></h3>
+                                    <h1>33,400</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_12">
+                                <div class="year">
+                                    <p>12</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_04.jpg" alt="04" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character">게임번들</div>
+                                    <div class="consol">PS5 / PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        It Takes Two <br /> PS4와 PS5 (, 한국어, 영...
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <h5 class="ordinary">-38%</h5>
+                                    <!-- <h5 class="plus" >
+                  <span>+</span>포함
+                </h5> -->
+                                    <h5 class="ea"><span>EA</span>포함</h5>
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del>47,000</del></h3>
+                                    <h1>29,140</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_00">
+                                <div class="year">
+                                    <p>All</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_05.jpg" alt="05" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character"></div>
+                                    <div class="consol">PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        Pic-a-Pix Pieces 2 <br /> (한국어판)
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <!-- <h5 class="ordinary" >
+                  -15%
+                </h5>
+                <h5 class="plus" >
+                  <span>+</span>포함
+                </h5> -->
+                                    <h5 class="ea"><span>EA</span>포함</h5>
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del></del></h3>
+                                    <h1>8,600</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_15">
+                                <div class="year">
+                                    <p>15</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_06.jpg" alt="06" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character">프리미엄 에디션</div>
+                                    <div class="consol">PS5 / PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        플래그 테일 : 이노센스 <br /> (중국어, 한국어, 영어)
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <h5 class="ordinary">-33%</h5>
+                                    <h5 class="plus"><span>+</span>포함</h5>
+                                    <!-- <h5 class="ea" >
+                  <span>EA</span>포함
+                </h5> -->
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del>34,800</del></h3>
+                                    <h1>23,316</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_00">
+                                <div class="year">
+                                    <p>All</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_07.jpg" alt="07" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character">게임번들</div>
+                                    <div class="consol">PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        Tetris Effect : <br /> Connected (중국어, 한국...
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <h5 class="ordinary">-60%</h5>
+                                    <!-- <h5 class="plus" >
+                  <span>+</span>포함
+                </h5>
+                <h5 class="ea" >
+                  <span>EA</span>포함
+                </h5> -->
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del>44,800</del></h3>
+                                    <h1>17,910</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_18">
+                                <div class="year">
+                                    <p>18</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_08.jpg" alt="08" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character"></div>
+                                    <div class="consol">PS5 / PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        Life is Strange : <br /> True Colors PS4 & PS5
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <!-- <h5 class="ordinary" >
+                  -15%
+                </h5> -->
+                                    <h5 class="plus"><span>+</span>포함</h5>
+                                    <!-- <h5 class="ea" >
+                  <span>EA</span>포함
+                </h5> -->
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del></del></h3>
+                                    <h1>69,800</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_15">
+                                <div class="year">
+                                    <p>15</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_09.jpg" alt="09" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character"></div>
+                                    <div class="consol">PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        FINAL FANTASY XV <br /> ROYAL EDITION (한국...
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <!-- <h5 class="ordinary" >
+                  -15%
+                </h5> -->
+                                    <h5 class="plus"><span>+</span>50% 할인</h5>
+                                    <!-- <h5 class="ea" >
+                  <span>EA</span>포함
+                </h5> -->
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del>59,400</del></h3>
+                                    <h1>29,700</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_18">
+                                <div class="year">
+                                    <p>18</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_10.jpg" alt="10" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character">스탠다드 에디션</div>
+                                    <div class="consol">PS5 / PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        Demon’s Souls <br /> (중국어(간체자), 한국어, 영...
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <h5 class="ordinary">-42%</h5>
+                                    <h5 class="plus"><span>+</span>포함</h5>
+                                    <!-- <h5 class="ea"><span>EA</span>포함</h5> -->
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del>79,800</del></h3>
+                                    <h1>46,284</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_12">
+                                <div class="year">
+                                    <p>12</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_11.jpg" alt="11" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character"></div>
+                                    <div class="consol">PS5 / PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        완다와 거상<br /> (한국어판)
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <h5 class="ordinary">-</h5>
+                                    <h5 class="plus"><span></span></h5>
+                                    <h5 class="ea"><span></span></h5>
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del></del></h3>
+                                    <h1>27,800</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_00">
+                                <div class="year">
+                                    <p>All</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_12.jpg" alt="12" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character">게임번들</div>
+                                    <div class="consol">PS5 / PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        Overcooked! 2 - <br /> Gourmet Edition (한국어,...
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <h5 class="ordinary">-63%</h5>
+                                    <!-- <h5 class="plus"><span>+</span>포함</h5> -->
+                                    <h5 class="ea"><span>EA</span>포함</h5>
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del>59,400</del></h3>
+                                    <h1>21,978</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_00">
+                                <div class="year">
+                                    <p>All</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_13.jpg" alt="13" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character">스탠다드 에디션</div>
+                                    <div class="consol">PS5 / PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        Sackboy: A Big <br /> Adventure PS4 & PS5
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <!-- <h5 class="ordinary">-15%</h5> -->
+                                    <h5 class="plus"><span>+</span>포함</h5>
+                                    <h5 class="ea"><span>EA</span>포함</h5>
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del></del></h3>
+                                    <h1>8,600</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_15">
+                                <div class="year">
+                                    <p>15</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_14.jpg" alt="14" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character">마스터 에디션</div>
+                                    <div class="consol">PS5 / PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        Monster Hunter World : <br /> Iceborne Master Edition
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <h5 class="ordinary">-25%</h5>
+                                    <h5 class="plus"><span>+</span>포함</h5>
+                                    <!-- <h5 class="ea"><span>EA</span>포함</h5> -->
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del>49,600</del></h3>
+                                    <h1>37,200</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_15 box_15">
+                                <div class="year">
+                                    <p>15</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_15.jpg" alt="15" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character"></div>
+                                    <div class="consol">PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        천수의 사쿠나히메 <br /> (중국어(간체자), 한국어, 영어)
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <h5 class="ordinary">-</h5>
+                                    <h5 class="plus"><span></span></h5>
+                                    <h5 class="ea"><span></span></h5>
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del></del></h3>
+                                    <h1>54,800</h1>
+                                </div>
+                            </div>
+                            <div class="game_box y_18 box_16">
+                                <div class="year">
+                                    <p>18</p>
+                                </div>
+                                <a href="#">
+                                    <img src="../image/image_sub01/game_box_16.jpg" alt="16" />
+                                </a>
+                                <div class="checkable">
+                                    <div class="character"></div>
+                                    <div class="consol">PS5 / PS4</div>
+                                </div>
+                                <div class="game_name">
+                                    <h4>
+                                        DARK SOULS™ III - <br /> 디럭스 에디션 (한국어판)
+                                    </h4>
+                                </div>
+                                <div class="discount">
+                                    <!-- <h5 class="ordinary">-15%</h5> -->
+                                    <h5 class="plus"><span>+</span>포함</h5>
+                                    <!-- <h5 class="ea"><span>EA</span>포함</h5> -->
+                                </div>
+                                <div class="price">
+                                    <h2>￦</h2>
+                                    <h3><del></del></h3>
+                                    <h1>89,600</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 페이지넘버 -->
+                <div class="page_number">
+                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li>
+                            <a href="#"><span>2</span></a>
+                        </li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+
+        </main>
+
+        <!-- 풋터 -->
+        <footer class="footer">
+            <div class="sony_logo">
+                <img src="../image/image_main/sony_logo.png" alt="sony_logo" />
+            </div>
+            <div class="text_box">
+                <div class="sns">
+                    <a href="#">
+                        <img src="../image/icon/Instagram.png" alt="Instagram" />
+                    </a>
+                    <a href="#">
+                        <img src="../image/icon/Facebook.png" alt="Facebook" />
+                    </a>
+                    <a href="#">
+                        <img src="../image/icon/youtube.png" alt="youtube" />
+                    </a>
+                    <a href="#">
+                        <img src="../image/icon/kakaotalk.png" alt="kakaotalk" />
+                    </a>
+                </div>
+                <div class="copy">
+                    <div class="adress">
+                        <p>
+                            고객센터 TEL: 02-6677-7771<br /> 회사명 : Sony Interactive Entertainment Inc.<br /> ©2021 Sony Interactive Entertainment Inc. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+                <div class="support">
+                    <ul>
+                        <li><a href="#">고객지원</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">사이트 맵</a></li>
+                        <li><a href="#">연령제한에 대하여</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="playstation_logo">
+                <img src="../image/image_main/playstation_logo.png" alt="playstation_logo" />
+            </div>
+        </footer>
+        </div>
+
+        <script src="../js/jquery-1.12.4.js"></script>
+        <script>
+            // 헤더 / 서치팝업
+            $(".header .fa-search").click(function() {
+                $(".pop_search").fadeToggle();
+            });
+            $(".pop_search .fa-times-circle").click(function() {
+                $(".pop_search").fadeOut();
+            });
+            $(".menu_icon .align_justify").click(function() {
+                $(".header, header .global_nav_bar li a, .align_justify").toggleClass(
+                    "active"
+                );
+            });
+            // 모바일메뉴
+            $(".mobile_global_nav_bar li").click(function() {
+                $(this).siblings().children(".main-menu").removeClass("active");
+                $(this).children(".main-menu").toggleClass("active");
+
+                $(".mobile_sub-menu").stop().slideUp();
+                $(this).children(".mobile_sub-menu").stop().slideToggle();
+            });
+        </script>
+</body>
+
+</html>

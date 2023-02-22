@@ -1,0 +1,666 @@
+/* 폰트 */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+/* font-family: "Noto Sans KR", sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+
+/* font-family: "Orbitron", sans-serif; */
+
+
+/* 리셋 css*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111049;
+    color: #c2c2ff;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.container {
+    min-width: 1420px;
+    max-width: 1920px;
+    position: relative;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #c2c2ff;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+
+/* 버튼 / 아이콘 */
+
+.button {
+    border: 2px solid #ff88ff;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 4px 25px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: #ff88ff;
+    transition: 0.5s;
+}
+
+.button a {
+    color: #fff;
+}
+
+.button a:hover {
+    font-weight: 700;
+    color: #111049;
+}
+
+.fa {
+    cursor: pointer;
+    font-size: 22px;
+    color: #c2c2ff;
+    transition: 0.5s;
+}
+
+.fa:hover {
+    color: #ff88ff;
+}
+
+
+/* 헤더 */
+
+.header {
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #111049;
+    z-index: 10000;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.header.active {
+    height: 340px;
+    background-color: #050437;
+}
+
+.header .global_nav_bar li a.active {
+    color: #ff88ff;
+}
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    width: 1400px;
+    height: 60px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.gnb_wrap {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.mobile_gnb_wrap {
+    display: none;
+}
+
+.global_nav_bar,
+.menu_icon {
+    display: flex;
+    align-items: center;
+}
+
+.global_nav_bar li a {
+    color: #fff;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.global_nav_bar li a:hover {
+    color: #ff88ff;
+    font-weight: 600;
+}
+
+.global_nav_bar li {
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.global_nav_bar li span {
+    color: #ff88ff;
+    font-weight: 600;
+}
+
+.local_nav_bar {
+    display: flex;
+}
+
+.sub-menu {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.sub-menu li {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.sub-menu li:hover {
+    color: #fff;
+}
+
+.menu_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 60px;
+    align-items: center;
+}
+
+.menu_icon li {
+    margin-right: 20px;
+}
+
+.menu_icon li:nth-child(3) {
+    margin-right: 0;
+}
+
+.menu_icon .align_justify {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu_icon .align_justify span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    background-color: #c2c2ff;
+    transition: 0.5s;
+}
+
+.menu_icon .align_justify:hover span {
+    background-color: #ff88ff;
+}
+
+.menu_icon .align_justify span:last-child {
+    margin-bottom: 0;
+}
+
+.align_justify.active span:nth-child(1) {
+    transform: translateY(0);
+}
+
+.align_justify.active span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.align_justify.active span:nth-child(3) {
+    transform: translateY(-16px);
+}
+
+
+/* 서치팝업 */
+
+.pop_search {
+    display: none;
+    position: fixed;
+    left: 62%;
+    top: 15px;
+    width: 400px;
+    height: 220px;
+    background-color: #050437;
+    border-radius: 20px;
+    z-index: 20000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.pop_search .fa-times-circle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.search_input {
+    display: flex;
+    margin-top: 60px;
+}
+
+.search_input .fa-search,
+.pop_search input {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.pop_search input {
+    background-color: #050437;
+    border: none;
+    width: 300px;
+    color: #ff88ff;
+    padding-left: 50px;
+}
+
+.underline {
+    display: block;
+    height: 3px;
+    background: radial-gradient(#6868f1 10%, transparent 70%);
+}
+
+.pop_search input:focus {
+    outline: none;
+}
+
+.saerch_tag {
+    margin-top: 30px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+}
+
+.saerch_tag .tag_button span {
+    line-height: 30px;
+    font-size: 16px;
+    padding: 0 15px;
+    color: #ff88ff;
+}
+
+.saerch_tag .tag_button {
+    background-color: #111049;
+    border-radius: 20px;
+    height: 30px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+/* 페이지넘버 */
+
+.page_number {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.page_number .fa {
+    font-size: 20px;
+    color: #ff88ff;
+}
+
+.page_number ul {
+    display: flex;
+}
+
+.page_number ul li a {
+    padding: 0px 20px;
+}
+
+.page_number ul li a span {
+    color: #ff88ff;
+}
+
+
+/* 풋터 */
+
+.sony_logo {
+    width: 200px;
+}
+
+.playstation_logo {
+    width: 200px;
+    margin-bottom: -10px;
+}
+
+.footer {
+    padding: 30px 0;
+    background-color: #050437;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.support ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.support ul li {
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.support ul li:first-child {
+    padding-left: 0;
+}
+
+.support ul li:last-child {
+    padding-right: 0;
+}
+
+.copy {
+    margin: 15px 0;
+}
+
+.support,
+.copy {
+    font-size: 14px;
+    color: #c2c2ff;
+    opacity: 0.7;
+}
+
+
+/* 폰트사이즈 / 색상 / 정렬 /두께  */
+
+
+/* font-size */
+
+.fs_10 {
+    font-size: 10px;
+}
+
+.fs_12 {
+    font-size: 12px;
+}
+
+.fs_14 {
+    font-size: 14px;
+}
+
+.fs_20 {
+    font-size: 20px;
+}
+
+.fs_30 {
+    font-size: 30px;
+}
+
+.fs_50 {
+    font-size: 50px;
+    color: #fff;
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    word-spacing: 20px;
+    font-weight: 600;
+}
+
+
+/* font-color */
+
+.fc_pink {
+    color: #ff88ff;
+}
+
+
+/* text-align */
+
+.ta_c {
+    text-align: center;
+}
+
+
+/* weight */
+
+.fw_100 {
+    font-weight: 100;
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+
+.fw_600 {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+    /* 헤더 */
+    .header .inner {
+        width: 100%;
+        margin: 0 40px;
+    }
+    .header.active {
+        height: 100vh;
+    }
+    .global_nav_bar,
+    .local_nav_bar {
+        display: none;
+    }
+    .mobile_gnb_wrap {
+        display: block;
+        position: absolute;
+        right: 100px;
+        top: 80px;
+    }
+    .main-menu {
+        width: 180px;
+        line-height: 40px;
+        position: relative;
+    }
+    .main-menu a {
+        color: #ff88ff;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .main-menu.active .fa-sort-down {
+        color: #ff88ff;
+        transform: scaleY(-1);
+        top: 5px;
+    }
+    .main-menu .fa-sort-down {
+        line-height: 40px;
+        position: absolute;
+        top: -5px;
+        right: 10px;
+        color: #6868f1;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .mobile_sub-menu {
+        display: none;
+        text-indent: 20px;
+    }
+    .mobile_sub-menu p {
+        line-height: 20px;
+        font-size: 14px;
+        color: #fff;
+    }
+    .menu_icon {
+        right: 80px;
+    }
+    .pop_search {
+        left: 0;
+        width: 350px;
+    }
+    .container {
+        min-width: auto;
+    }
+    .sony_logo,
+    .playstation_logo,
+    .support {
+        display: none;
+    }
+    .footer .txtbox {
+        margin: 0 auto;
+    }
+    .fs_50 {
+        font-size: 30px;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .page_number {
+        padding: 40px 30px 60px;
+    }
+    .page_number ul li a {
+        padding: 0px 10px;
+    }
+}

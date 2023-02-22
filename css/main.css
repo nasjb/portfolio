@@ -1,0 +1,823 @@
+/* 인트로 */
+.intro {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+  background: black;
+}
+
+.intro-video {
+  height: 100%;
+  position: relative;
+}
+
+.intro-video video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+/* 배너01 video */
+.banner01 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.banner01 video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.banner01:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 110%;
+  background: linear-gradient(to top, rgba(17, 16, 73, 1) 15%, transparent 30%);
+}
+
+/* 배너02,03 슬라이드 공통 */
+.rel_banner_slide,
+.news_banner_slide {
+  margin-top: 100px;
+}
+
+.banner02.slick-slide,
+.banner03.slick-slide {
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.content_bg {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.content_bg .content_bg_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bn_dark_left {
+  transform: translateX(-20%);
+}
+
+.bn_dark_right {
+  transform: translateX(20%);
+}
+
+.content_left,
+.content_right {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.content_left {
+  transform: translateX(-100%);
+  left: 0;
+}
+
+.content_right {
+  transform: translateX(100%);
+  right: 0;
+}
+
+.text_box {
+  position: absolute;
+  padding: 0 80px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.banner03 .text_box {
+  right: 0px;
+  text-align: right;
+}
+
+.text_box h2 {
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.text_box p {
+  line-height: 1.4;
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
+/* 배너02,03 슬라이드 넘김 효과 */
+
+.content_bg:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.78);
+  transition: all 1s;
+  transition-delay: 0.5s;
+  opacity: 1;
+}
+
+.banner02.slick-active .content_bg:after,
+.banner03.slick-active .content_bg:after {
+  opacity: 0;
+}
+
+.banner02 .content_left,
+.banner02 .content_right,
+.banner03 .content_left,
+.banner03 .content_right,
+.banner02 .character,
+.banner03 .character {
+  transition: all 1s;
+  transition-delay: 1s;
+}
+
+.banner02.slick-active .character,
+.banner03.slick-active .character {
+  transform: translateX(0) translateY(0) scale(1.2) rotate(0);
+  opacity: 1;
+}
+
+.banner02.slick-active .content_left,
+.banner02.slick-active .content_right,
+.banner03.slick-active .content_left,
+.banner03.slick-active .content_right {
+  transform: translateX(0);
+}
+
+/*배너02,03 title/character 위치와 크기 */
+
+.character {
+  position: absolute;
+  z-index: 700;
+}
+
+.banner02 .title,
+.banner03 .title {
+  width: 600px;
+}
+
+.call_of_duty .character {
+  left: 25%;
+  bottom: 0;
+  transform: translateY(50px) scale(1.8);
+  width: 310px;
+}
+
+.battle_field .character {
+  left: 60%;
+  bottom: -15%;
+  transform: translateX(-100px) scale(1);
+  width: 400px;
+}
+
+.ghost_wire .character {
+  left: 60%;
+  top: 10%;
+  transform: scale(1);
+  opacity: 0;
+  width: 500px;
+}
+
+.horizon .character {
+  position: absolute;
+  left: 40%;
+  transform: rotate(-15deg);
+  bottom: -50px;
+  width: 520px;
+}
+
+.marvel .text_box {
+  text-align: left;
+}
+
+.marvel .character {
+  left: 63%;
+  top: 20%;
+  transform: translateX(-150px) translateY(30px) scale(1);
+  width: 470px;
+}
+
+.forspoken .character {
+  bottom: 0;
+  left: 40%;
+  transform: translateX(-100px) scale(1.6);
+  width: 350px;
+}
+
+/*배너02,03 title/character 위치와 크기 End */
+
+/* 배너02 이달의 소식 */
+
+.thisMonth {
+  padding-top: 120px;
+}
+
+/* 배너02 이달의 소식_슬라이드 닷 */
+
+.news_banner_slide .slick-dots {
+  margin-top: 100px;
+  display: flex;
+}
+
+.news_banner_slide .slick-dots li {
+  cursor: pointer;
+  width: 320px;
+  height: 160px;
+  margin: 0 10px;
+  border: 3px solid #c2c2ff;
+  border-radius: 20px;
+  opacity: 0.5;
+  transition-duration: 0.5s;
+  position: relative;
+}
+
+.news_banner_slide .slick-dots li.slick-active {
+  opacity: 1;
+  border-color: #ff88ff;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0.2s;
+  transform: translate(0, -20px);
+  position: relative;
+}
+
+.news_banner_slide .slick-dots li:nth-child(1) {
+  margin-left: 20px;
+  background: url("../image/image_main/news_games_1.png") no-repeat center;
+}
+
+.news_banner_slide .slick-dots li:nth-child(2) {
+  background: url("../image/image_main/news_games_2.png") no-repeat center;
+}
+
+.news_banner_slide .slick-dots li:nth-child(3) {
+  background: url("../image/image_main/news_games_3.png") no-repeat center;
+}
+
+.news_banner_slide .slick-dots li button {
+  display: none;
+}
+
+.news_banner_slide .slick-dots li::after {
+  content: "";
+  background: url(../image/icon/icon_aim.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 150px;
+  top: -30px;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.news_banner_slide .slick-dots li.slick-active::after {
+  content: "";
+  animation-name: scale;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  opacity: 1;
+  visibility: visible;
+}
+
+.news_list {
+  margin-top: -350px;
+  padding: 150px 0 50px;
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  background-position: top;
+  background-size: cover;
+  background: linear-gradient(
+      to bottom,
+      rgba(17, 16, 73, 0.8) 10%,
+      rgba(17, 16, 73, 0.9) 60%,
+      rgba(17, 16, 73, 1) 90%
+    ),
+    url(../image/image_main/this_month_bg.jpg) no-repeat;
+}
+
+.news_list .news_txt {
+  text-align: right;
+  margin-left: 70%;
+}
+
+.news_list .news_txt h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.news_list .news_txt p {
+  font-size: 14px;
+}
+
+/* banner02 End */
+
+/* 배너03 신작게임 */
+
+.newReleases {
+  padding-top: 90px;
+}
+
+/* 배너03 신작게임_슬라이드 닷  */
+
+.rel_banner_slide ul.slick-dots {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.rel_banner_slide .slick-dots li {
+  width: 40px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #c2c2ff;
+  margin: 0 10px;
+  transition: 1s;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.rel_banner_slide .slick-dots li.slick-active {
+  background-color: #ff88ff;
+  transform: scale(1.3);
+}
+
+.rel_banner_slide .slick-dots li button {
+  display: none;
+}
+
+/* 배너03 신작게임_리스트 */
+
+.releases_list {
+  height: 700px;
+  background-position: bottom;
+  background-size: cover;
+  background: linear-gradient(
+      to bottom,
+      rgba(17, 16, 73, 0.7) 10%,
+      rgba(17, 16, 73, 0.9) 30%,
+      rgba(17, 16, 73, 1) 90%
+    ),
+    url(../image/image_main/new_releases_bg.jpg) no-repeat;
+}
+
+.releases_list .slick-current {
+  border: 3px solid #ff88ff;
+  opacity: 1;
+  transition: 00.5s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0.2s;
+  transform: translate(0, -10px);
+}
+
+.releases_list .releases_txt {
+  padding: 100px 0px 20px 230px;
+  line-height: 50px;
+}
+
+.releases_list .releases_txt h2 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.releases_list .releases_txt p {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.releases_list .arrowicon {
+  display: flex;
+  width: 100px;
+  height: 25px;
+  justify-content: space-between;
+}
+
+.rel_game_list {
+  display: flex;
+}
+
+.rel_game_box {
+  flex: 1;
+  padding: 10px;
+  border: 3px solid #c2c2ff;
+  border-radius: 20px;
+  margin: 0px 10px;
+  text-align: center;
+  background-color: #050437;
+  opacity: 0.5;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0.2s;
+  transform: translate(0, 10px);
+  cursor: pointer;
+}
+
+.rel_game_box img {
+  width: 100%;
+}
+
+.rel_game_box p {
+  font-size: 14px;
+  padding: 30px 0 20px;
+}
+
+.rel_game_list .slick-track {
+  padding: 50px;
+}
+
+/* PlayStation 5를 소개합니다. */
+
+.introduce {
+  padding-top: 150px;
+}
+
+.introduce .title_box {
+  text-align: center;
+}
+
+.introduce .title_box .fs_50 {
+  padding: 30px 0 10px;
+}
+
+.introduce .title_box p {
+  padding-top: 30px;
+}
+
+.product_list {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.product_list img {
+  width: auto;
+  height: 120px;
+  opacity: 0.6;
+  transform: scale(0.6);
+  transition: 0.5s;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.product_list img.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.product_list p {
+  padding: 10px 0;
+}
+
+.tab-box.active {
+  display: block;
+}
+
+.tab-box {
+  display: none;
+  max-width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  border: 5px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(#050437, #050437),
+    linear-gradient(to bottom, #5d5fef, #ff88ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  text-align: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.tab-box .info_txtbox {
+  padding: 30px 0;
+  line-height: 60px;
+}
+
+.tab-box .info_txtbox h2 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.tab-box .info_txtbox p {
+  font-size: 16px;
+}
+
+.ps5_introduce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ps5_introduce img {
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+.ps5_introduce .ps5_detail_02 {
+  margin: 0 40px;
+}
+
+.tab-box .button {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 800px) {
+  .ps5_detail_01,
+  .ps5_detail_03 {
+    display: none;
+  }
+}
+
+/* 플레이스테이션 플러스 */
+
+.psplus {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.psplus .fs_50 {
+  margin-bottom: 40px;
+}
+
+.psplus-card .card01 {
+  padding: 80px 0;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.psplus-card .card01 img {
+  width: 100%;
+  padding: 5px;
+  border: 3px solid #111049;
+}
+
+.psplus .button {
+  margin: 0 auto;
+}
+
+/* hover,keyframes */
+
+.product_pre img:hover,
+.product_next img:hover {
+  filter: hue-rotate(320deg);
+  cursor: pointer;
+}
+
+.rel_game_box p:hover {
+  color: #ff88ff;
+  transition: 00.5s;
+}
+
+.rel_game_box:hover {
+  border: 3px solid #ff88ff;
+  opacity: 1;
+  transition: 00.5s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0.2s;
+  transform: translate(0, -10px);
+}
+
+.ps5_introduce img:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 00.5s;
+}
+
+.psplus-card .card01 img:hover {
+  border: 3px solid #ff88ff;
+  border-radius: 30px;
+  transition: 00.5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(260deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.4) rotate(0deg);
+  }
+  50% {
+    transform: scale(1) rotate(180deg);
+  }
+  80% {
+    transform: scale(0.7) rotate(90deg);
+  }
+  100% {
+    transform: scale(0.7) rotate(90deg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* 테블릿 CSS */
+}
+@media screen and (max-width: 767px) {
+  .intro-video {
+    height: 520px;
+  }
+  .banner01 {
+    height: 520px;
+  }
+  .banner01 video {
+    width: 100%;
+    height: 520px;
+    /* height: 100%; */
+    /* object-fit: fill; */
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    min-width: auto;
+    min-height: auto;
+  }
+  .banner01 {
+    margin-top: 60px;
+    /*height: 160px;*/
+  }
+  .banner01:after {
+    display: none;
+  }
+  
+  .thisMonth {
+    padding-top: 0;
+  }
+
+  .fs_50 {
+    font-size: 30px;
+  }
+  .news_banner_slide,
+  .rel_banner_slide {
+    width: 100%;
+    position: relative;
+  }
+
+  .text_box {
+    padding: 0 20px;
+  }
+  .text_box h2 {
+    font-size: 18px;
+    width: 300px;
+  }
+  .text_box p {
+    display: none;
+  }
+  .banner02 .title,
+  .banner03 .title {
+    width: 320px;
+  }
+  .horizon .text_box,
+  .forspoken .text_box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+    text-align: left;
+  }
+  .news_list,
+  .releases_list .arrowicon,
+  .news_banner_slide .slick-dots li::after,
+  .ps5_detail_01,
+  .ps5_detail_03 {
+    display: none;
+  }
+  .bn_dark_right,
+  .character {
+    visibility: hidden;
+  }
+
+  .releases_list .releases_txt {
+    padding: 120px 0 0;
+    text-align: center;
+  }
+  .releases_list .releases_txt h2 {
+    font-size: 30px;
+  }
+
+  .news_banner_slide .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .news_banner_slide .slick-dots li:nth-child(1),
+  .news_banner_slide .slick-dots li:nth-child(2),
+  .news_banner_slide .slick-dots li:nth-child(3) {
+    background: #c2c2ff;
+  }
+  .news_banner_slide .slick-dots li {
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: 1s;
+    transform: scale(1);
+    cursor: pointer;
+    border: none;
+  }
+
+  .news_banner_slide .slick-dots li.slick-active {
+    background-color: #ff88ff;
+    transform: scale(1.3);
+  }
+
+  .introduce {
+    padding: 20px 20px;
+  }
+  .introduce h1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .tab-box .info_txtbox h2 {
+    font-size: 20px;
+  }
+  .tab-box .info_txtbox p {
+    display: none;
+  }
+
+  .ps5_introduce img {
+    margin: 0px 10px;
+    max-width: 200px;
+  }
+
+  .tab-box {
+    width: 80%;
+    height: 450px;
+  }
+  .product_list img {
+    height: 80px;
+    margin: 0;
+  }
+
+  .product_list img.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .tab-box .button {
+    bottom: 20px;
+    border-radius: 20px;
+  }
+  .psplus {
+    padding: 0 10px 60px;
+  }
+  .psplus p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .psplus-card .card01 {
+    padding: 20px 0;
+    width: 250px;
+  }
+  .fs_20 {
+    font-size: 16px;
+  }
+}

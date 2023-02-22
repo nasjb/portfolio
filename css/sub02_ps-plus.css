@@ -1,0 +1,323 @@
+/* 배너 */
+
+.banner01 {
+  background-image: url(../image/image_sub02/bn_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 150px 60px 150px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  position: relative;
+}
+
+.banner01 .txtbox {
+  padding: 140px 0;
+}
+.banner01 .txtbox .fs_30 {
+  padding: 30px 0;
+}
+.banner01 .txtbox p {
+  padding-bottom: 20px;
+}
+
+/* 가입하기 */
+
+.join .fs_20 {
+  padding: 20px 0 30px;
+  font-weight: 300;
+}
+
+.join .fs_30 {
+  color: #ff88ff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.month_wrap,
+.month_00,
+.discount {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.month_wrap {
+  max-width: 95%;
+  margin: 0 auto;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+}
+
+.month_00:hover {
+  transform: translateY(-20px);
+}
+.month_00 {
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 40px;
+  width: 420px;
+  margin: 20px;
+  position: relative;
+  background: linear-gradient(
+    145deg,
+    rgba(40, 40, 160, 1) 10%,
+    rgba(40, 40, 160, 0.5) 30%,
+    rgba(5, 5, 55, 0.5) 70%,
+    rgba(5, 5, 55, 1) 90%
+  );
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sale_tag::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #ff88ff;
+  border: 14px solid #111049;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  z-index: 1;
+}
+
+.month_wrap .month_00 .joinMonth_image img {
+  width: 200px;
+  height: 200px;
+}
+
+.month_wrap .month_00 .txtbox .discount img {
+  width: 35px;
+  height: 35px;
+}
+
+.discount_tag {
+  position: absolute;
+  right: 7px;
+  top: 19px;
+  color: #050437;
+  font-weight: 600;
+  font-size: 12px;
+  z-index: 2;
+}
+
+.join h5 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+/* 기프트카드 */
+
+.giftcard_buy {
+  height: 1500px;
+  position: relative;
+}
+
+.giftcard_wrap {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.giftcard_wrap .fs_14 {
+  margin-top: 20px;
+}
+
+.giftcard_wrap .fs_20 {
+  padding: 40px 0;
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+}
+
+.article_plus_gift,
+.article_store_gift {
+  position: relative;
+  width: 1200px;
+  margin-top: 50px;
+}
+.article_plus_gift {
+  height: 580px;
+  box-sizing: border-box;
+}
+
+.article_store_gift {
+  height: 480px;
+  box-sizing: border-box;
+}
+.card_list img {
+  cursor: pointer;
+}
+
+.giftcard_wrap .button a {
+  color: #111049;
+}
+.giftcard_wrap .button a:hover {
+  color: #111049;
+}
+.giftcard_wrap .button:hover {
+  animation: none;
+  background-color: #ff88ff;
+  border: 2px solid #ff88ff;
+}
+.giftcard_wrap .button {
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
+  border: 2px solid #fff;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: buttonScale;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+/* 주요혜택 */
+
+.benefit_wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+
+.benefit_box {
+  width: 480px;
+  height: 800px;
+  padding: 40px;
+  background-color: #050437;
+  border-radius: 30px;
+  margin: 20px;
+  text-align: center;
+}
+
+.benefit_box .icon {
+  width: 120px;
+  height: 120px;
+}
+
+.benefit_box .fs_30 {
+  color: #fff;
+  padding: 15px 0;
+}
+.benefit_box .fs_12 {
+  padding: 10px 0;
+}
+.benefit_box .button {
+  margin-top: 30px;
+}
+@keyframes buttonScale {
+  to {
+    box-shadow: 0px 0px 3px 3px #fff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner01 {
+    padding: 100px 0 50px 0;
+  }
+  .banner01 .txtbox {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    padding: 0;
+    text-align: center;
+    width: 80%;
+  }
+  .hd_card {
+    margin: 0 auto;
+    padding-bottom: 150px;
+  }
+  .month_wrap {
+    flex-direction: column;
+  }
+  .month_00 {
+    width: 300px;
+    padding: 20px;
+  }
+  .month_00 .txtbox {
+    text-align: center;
+  }
+
+  .sale_tag::after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-color: #ff88ff;
+    border: 8px solid #111049;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: 1;
+  }
+
+  .month_wrap .month_00 .joinMonth_image img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .month_wrap .month_00 .txtbox .discount img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .discount_tag {
+    position: absolute;
+    right: 0px;
+    top: 8px;
+    font-weight: 600;
+    font-size: 10px;
+    z-index: 2;
+  }
+
+  .join h5 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+  }
+
+  .join .fs_20 {
+    padding: 10px 0 15px;
+  }
+
+  .join .fs_30 {
+    margin-bottom: 10px;
+  }
+
+  .benefit_wrap {
+    flex-direction: column;
+  }
+  .benefit_box {
+    width: 300px;
+    height: 500px;
+    margin: 10px 0;
+    padding: 20px;
+  }
+  .benefit_box .icon {
+    width: 60px;
+    height: 60px;
+  }
+  .fs_12.notice {
+    display: none;
+  }
+
+  .benefit_box .benefit_img {
+    width: 250px;
+    height: auto;
+  }
+}
