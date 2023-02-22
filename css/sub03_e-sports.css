@@ -45,7 +45,7 @@
       rgba(17, 16, 73, 0.85) 70%,
       rgba(17, 16, 73, 1) 95%
     ),
-    url(../image/image_sub03/banner01.jpg);
+    url(../image_sub03/banner01.jpg);
 }
 .banner01 h1 {
   padding: 210px 160px 120px 0;

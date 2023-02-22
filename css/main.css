@@ -268,15 +268,15 @@
 
 .news_banner_slide .slick-dots li:nth-child(1) {
   margin-left: 20px;
-  background: url("../image/image_main/news_games_1.png") no-repeat center;
+  background: url("../image_main/news_games_1.png") no-repeat center;
 }
 
 .news_banner_slide .slick-dots li:nth-child(2) {
-  background: url("../image/image_main/news_games_2.png") no-repeat center;
+  background: url("../image_main/news_games_2.png") no-repeat center;
 }
 
 .news_banner_slide .slick-dots li:nth-child(3) {
-  background: url("../image/image_main/news_games_3.png") no-repeat center;
+  background: url("../image_main/news_games_3.png") no-repeat center;
 }
 
 .news_banner_slide .slick-dots li button {
@@ -285,7 +285,7 @@
 
 .news_banner_slide .slick-dots li::after {
   content: "";
-  background: url(../image/icon/icon_aim.png) no-repeat center;
+  background: url(../icon/icon_aim.png) no-repeat center;
   background-size: contain;
   position: absolute;
   left: 150px;
@@ -320,7 +320,7 @@
       rgba(17, 16, 73, 0.9) 60%,
       rgba(17, 16, 73, 1) 90%
     ),
-    url(../image/image_main/this_month_bg.jpg) no-repeat;
+    url(../image_main/this_month_bg.jpg) no-repeat;
 }
 
 .news_list .news_txt {
@@ -390,7 +390,7 @@
       rgba(17, 16, 73, 0.9) 30%,
       rgba(17, 16, 73, 1) 90%
     ),
-    url(../image/image_main/new_releases_bg.jpg) no-repeat;
+    url(../image_main/new_releases_bg.jpg) no-repeat;
 }
 
 .releases_list .slick-current {

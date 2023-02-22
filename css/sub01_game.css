@@ -1,7 +1,7 @@
 /* 배너 */
 
 .banner01 {
-    background-image: url(../image/image_sub01/sub_bn_02.jpg);
+    background-image: url(../image_sub01/sub_bn_02.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
